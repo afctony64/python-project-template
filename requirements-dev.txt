@@ -1,0 +1,30 @@
+# Development dependencies for Python Project Template
+# Install: pip install -r requirements-dev.txt
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.12.0
+
+# Linting and Formatting
+ruff>=0.6.0
+
+# Type Checking
+mypy>=1.8.0
+types-requests
+
+# Security
+bandit[toml]>=1.7.0
+
+# Pre-commit hooks
+pre-commit>=3.6.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.5.0
+
+# Utilities
+ipython>=8.20.0
+ipdb>=0.13.13
+

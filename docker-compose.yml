@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/.venv  # Exclude venv from mount
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENV=development
+    ports:
+      - "8000:8000"
+    command: python -m your_package
+
+  # Add other services as needed (database, redis, etc.)
+
