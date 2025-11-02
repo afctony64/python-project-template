@@ -55,6 +55,14 @@ repos:
         args: ['--maxkb=1000']
         name: 🚫 Block Large Files [BLOCKING]
 
+  # Conventional Commits
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.4.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        name: ✅ Conventional Commits [BLOCKING]
+
   # Type checking (optional - uncomment if using mypy)
   # - repo: https://github.com/pre-commit/mirrors-mypy
   #   rev: v1.11.2

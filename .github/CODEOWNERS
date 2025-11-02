@@ -1,0 +1,12 @@
+# Code Owners
+# These owners will be requested for review when someone opens a pull request.
+
+# Default owners for everything in the repo
+*                   @yourusername
+
+# Specific ownership
+/docs/              @yourusername
+/.github/           @yourusername
+/scripts/           @yourusername
+/tests/             @yourusername
+
