@@ -1,0 +1,68 @@
+site_name: Your Project Name
+site_description: Your project description
+site_author: Your Name
+site_url: https://yourusername.github.io/your-project
+
+repo_name: yourusername/your-project
+repo_url: https://github.com/yourusername/your-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Quick Start: QUICK_START.md
+  - Development: DEVELOPMENT.md
+  - Contributing: CONTRIBUTING.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - ADRs: architecture/adr-001-use-ruff.md
+  - API Reference: api/
+
